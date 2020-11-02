@@ -1,17 +1,17 @@
 {
   "name": "aliexstrasza",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "auto-account",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "discord.js": "^12.2.0",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "discord.js": "^11.5.0"
   },
   "engines" : {
-    "node": ">= 6.9.4",
+    "node": "8.x",
   },
   "license": "MIT",
   }

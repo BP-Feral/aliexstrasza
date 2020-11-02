@@ -11,4 +11,4 @@ url: "https://www.twitch.tv/blackpigeon12"})
     .catch(console.error);
 });
 
-client.login("MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc");
+client.login('MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc');

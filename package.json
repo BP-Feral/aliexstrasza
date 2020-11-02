@@ -1,18 +1,17 @@
 {
   "name": "aliexstrasza",
-  "version": "1.0.1",
-  "description": "auto-account",
+  "version": "1.0.0",
+  "description": "status",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "AliexStrasza#5268",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
     "discord.js": "^11.5.0"
   },
-  "engines" : {
-    "node": "8.x",
-  },
-  "license": "MIT",
+  "engines": {
+  	"node": "8.x"
   }
 }

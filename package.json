@@ -9,9 +9,9 @@
   "author": "AliexStrasza#5268",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.0"
+    "discord.js": "^11.6.4"
   },
   "engines": {
-  	"node": "8.x"
+    "node": "8.x"
   }
 }

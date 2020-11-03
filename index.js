@@ -6,7 +6,7 @@ console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setActivity(`Lmao no strem`, {
 type: "STREAMING",
-url: "https://www.twitch.tv/blackpigeon12"})
+url: "https://www.twitch.tv/aliexstrasza"})
     .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
     .catch(console.error);
 });

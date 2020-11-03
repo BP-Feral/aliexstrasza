@@ -28,16 +28,19 @@ client.on("message", async msg => {
   	.setDescription(`
   	 __**Testing App**__
   	        \`^-^\`This section is not finished yet!\`^-^\`
+     >My current commands are thelp and tsummoner
      \`^-^\`Contact me on private to suggest new functions!\`^-^\`      `)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);
   }
-  if (msg.author.client)
-  {
-    if (msg.author.id == "268746806521888768")
-  	if (command ==="summoner") {
-  		msg.channel.send("LMAO");
-  	}
+  if (msg.author.client) {
+    if (msg.author.id == "268746806521888768") {
+  	  if (command ==="summoner") { 
+        msg.channel.send("My summoner name is \`Øphaquiłle\`");
+      } 
+    } else {
+        msg.channel.send("Sorry, but only AliexStrasza can reveal his summoner name")
+    }
   }
 
 });

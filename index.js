@@ -34,7 +34,7 @@ client.on("message", async msg => {
   	  msg.channel.send(helpembed);
   }
   
-  if ( command == "summoner" && msg.author.id =="268746806521888768") {
+  if ( command === "summoner" && msg.author.id === "268746806521888768") {
     msg.channel.send("My summoner name is \`Øphaquiłle\`");
      console.log(`Name matches!`);
   } else if ( command == "summoner && !msg.author.client )

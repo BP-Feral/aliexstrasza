@@ -29,10 +29,11 @@ client.on("message", async msg => {
   	.setDescription(`
   	 __**Help Center**__
   	 \`^-^\`This section is not finished yet!\`^-^\`
-     My current commands are \`aliexhelp\` and \`aliexsum\`
-     (aliexsum can only be run by @AliexStrasza#5268 @"268746806521888768")
+     You can acces this menu by typing \`**aliexhelp**\`.
+     \`**aliexsum**\` and \`**aliexopgg**\` are my commands.
+     (these commands can **only** be run by AliexStrasza#5268)
      Contact me on private to suggest new functions!
-     I can even add userid-exclusive commands ;}`)
+     I can even add user-id exclusive commands ;}`)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);
   }
@@ -43,6 +44,14 @@ client.on("message", async msg => {
   } else if ( command == "sum" && msg.author.id != "268746806521888768" )
              {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
+             return
+  }
+    if ( command === "opgg" && msg.author.id === "268746806521888768") {
+    msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
+     console.log(`opgg requested by AliexStrasza! -got reply-`);
+  } else if ( command == "opgg" && msg.author.id != "268746806521888768" )
+             {
+              console.log(`opgg requested, but wasn't the owner! -noreply-`);
              return
   }
   //========================EXCLUSIVE COMMAND============================

@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity(`[thelp] lmaoo`, {
+client.user.setActivity(`**thelp** lmaoo`, {
   type: "STREAMING",
   url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
@@ -32,5 +32,12 @@ client.on("message", async msg => {
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);
   }
+  if (msg.author.client)
+  {
+  	if (command ==="summoner") {
+  		msg.channel.send("LMAO");
+  	}
+  }
+
 });
 client.login("MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc");

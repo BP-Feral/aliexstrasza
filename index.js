@@ -30,6 +30,7 @@ client.on("message", async msg => {
   	 __**Help Center**__
   	 \`^-^\`This section is not finished yet!\`^-^\`
      My current commands are \`aliexhelp\` and \`aliexsum\`
+     (aliexsum can only be run by AliexStrasza#5268)
      Contact me on private to suggest new functions!
      I can even add userid-exclusive commands ;}`)
   		.setFooter("©️ 2020 AliexStrasza Development");

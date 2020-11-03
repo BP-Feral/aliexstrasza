@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const preffix = "t"
+const preffix = "aliex "
 
 client.on('ready', () => 
   console.log(`Logged in as ${client.user.tag}!`));
@@ -28,7 +28,7 @@ client.on("message", async msg => {
   	.setDescription(`
   	 __**Testing App**__
   	        \`^-^\`This section is not finished yet!\`^-^\`
-     >My current commands are thelp and tsummoner
+     >My current commands are \`aliex help\` and \`aliex summoner\`
      \`^-^\`Contact me on private to suggest new functions!\`^-^\`      `)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);

@@ -23,7 +23,7 @@ client.on("message", async msg => {
   if (command === "help") {
   	const helpembed = new Discord.RichEmbed()
   	.setColor("#7289DA")
-  	.setAuthor(client.user)
+  	.setAuthor(client.user.tag, client.displayAvatarURL())
   	.setDescription(
   	  `
   	 __**My List**__

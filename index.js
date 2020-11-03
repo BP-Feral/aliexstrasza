@@ -24,6 +24,7 @@ client.on("message", async msg => {
   	const helpembed = new Discord.RichEmbed()
   	.setColor("#7289DA")
   	//.setAuthor(client.user.tag, client.user.displayAvatarURL())
+      message.author.avatarURL({ dynamic:true })
   	.setDescription(
   	  `
   	 __**My List**__

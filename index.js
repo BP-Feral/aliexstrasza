@@ -42,7 +42,16 @@ client.on("message", async msg => {
               console.log(`message not sent by owner!`);
              return
 }
-  
+  //=============================================
+  if ( command === "test" && msg.author.id === "430833156095213568") {
+    msg.channel.send("Congrats! You passed!");
+    console.log(`derpols wrote something!`);
+  } else if ( command == "test" && msg.author.id != "430833156095213568" )
+  {
+    console.log(`message not sent by derpols!`);
+    msg.channel.send("I'm sorry, but only derpols is allowed to type that!");
+    return
+  }
   
   //if (msg.author.client) { 
    // if (msg.author.id == "268746806521888768") {

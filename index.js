@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const preffix = "@AliexStrasza"
+const preffix = "t"
 
 client.on('ready', () => {
 console.log(`Gogged in as ${client.user.tag}!`);

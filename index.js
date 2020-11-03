@@ -36,22 +36,32 @@ client.on("message", async msg => {
   
   if ( command === "sum" && msg.author.id === "268746806521888768") {
     msg.channel.send("My summoner name is \`Øphaquiłle\`");
-     console.log(`Name matches!`);
+     console.log(`Summoner name requested by AliexStrasza! -got reply-`);
   } else if ( command == "sum" && msg.author.id != "268746806521888768" )
              {
-              console.log(`message not sent by owner!`);
+              console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
              return
 }
   //=============================================
   if ( command === "test" && msg.author.id === "430833156095213568") {
     msg.channel.send("Congrats! You passed!");
-    console.log(`derpols wrote something!`);
+    console.log(`derpols wrote something! -got reply-`);
   } else if ( command == "test" && msg.author.id != "430833156095213568" )
   {
-    console.log(`message not sent by derpols!`);
+    console.log(`message -test- not sent by derpols!`);
     msg.channel.send("I'm sorry, but only derpols is allowed to type that!");
     return
   }
+   if ( command === "ter" && msg.author.id === "369531260831268864") {
+    msg.channel.send("Congrats! You passed!");
+    console.log(`TERFOLE wrote something! -got reply-`);
+  } else if ( command == "ter" && msg.author.id != "369531260831268864" )
+  {
+    console.log(`message -ter- not sent by TERFOLE! -got reply-`);
+    msg.channel.send("I'm sorry, but only TERFOLE is allowed to type that! ");
+    return
+  }
+  
   
   //if (msg.author.client) { 
    // if (msg.author.id == "268746806521888768") {

@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity(`type [aliex help] lmaoo`, {
+client.user.setActivity(`type [aliexhelp] lmaoo`, {
   type: "STREAMING",
   url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
@@ -28,7 +28,7 @@ client.on("message", async msg => {
   	.setDescription(`
   	 __**Testing App**__
   	        \`^-^\`This section is not finished yet!\`^-^\`
-     >My current commands are \`aliex help\` and \`aliex summoner\`
+     >My current commands are \`aliexhelp\` and \`aliexsummoner\`
      \`^-^\`Contact me on private to suggest new functions!\`^-^\`      `)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);

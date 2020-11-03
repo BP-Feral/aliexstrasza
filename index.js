@@ -11,7 +11,7 @@ type: "STREAMING",
 url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
   .catch(console.error);
-
+});
 client.on("message", async msg => {
   let command = msg.content.toLowerCase().split(" ")[0];
   command = command.slice(preffix.length);

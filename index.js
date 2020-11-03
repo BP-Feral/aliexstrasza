@@ -1,14 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const preffix = "t"
+const preffix = "@AliexStrasza"
 
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setActivity(`Lmao no strem`, {
 type: "STREAMING",
-url: "https://www.twitch.tv/aliexstrasza"});
+url: "https://www.twitch.tv/aliexstrasza"})
+  .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+  .catch(console.error);
 
 client.on("message", async msg => {
   let command = msg.content.toLowerCase().split(" ")[0];
@@ -27,9 +29,4 @@ client.on("message", async msg => {
   msg.channel.send(helpembed);
   }
 });
-
-    .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-    .catch(console.error);
-});
-
 client.login("MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc");

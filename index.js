@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const preffix = "aliex "
+const preffix = "aliex"
 
 client.on('ready', () => 
   console.log(`Logged in as ${client.user.tag}!`));

@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity(`*thelp* lmaoo`, {
+client.user.setActivity(`**thelp** lmaoo`, {
   type: "STREAMING",
   url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))

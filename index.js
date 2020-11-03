@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const bot = new Client;
+const bot = new Client({
+	disableMentions: "all"
+});
 
 const preffix = "t"
 

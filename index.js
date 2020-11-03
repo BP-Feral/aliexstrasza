@@ -1,8 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const bot = new Client({
-	disableMentions: "all"
-});
 
 const preffix = "t"
 
@@ -16,7 +13,7 @@ url: "https://www.twitch.tv/aliexstrasza"})
   .catch(console.error);
 });
 
-bot.on("message", async msg => {
+client.on("message", async msg => {
   if (!msg.content.startsWith(preffix)) return;
 
   let command = msg.content.toLowerCase().split(" ")[0];

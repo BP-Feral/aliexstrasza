@@ -6,7 +6,7 @@ const preffix = "t"
 client.on('ready', () => {
 console.log(`Gogged in as ${client.user.tag}!`);
 
-client.user.setActivity(`Lmao no stream`, {
+client.user.setActivity(`Lmao no strem`, {
 type: "STREAMING",
 url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))

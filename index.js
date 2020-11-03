@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity(`Lmao no stream`, {
+client.user.setActivity(`*thelp* lmaoo`, {
   type: "STREAMING",
   url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
@@ -27,7 +27,7 @@ client.on("message", async msg => {
   	.setAuthor(client.user.tag)
   	.setDescription(`
   	 __**Testing App**__
-  	 \`^-^\`This section is not finished yet!\`^-^\`
+  	        \`^-^\`This section is not finished yet!\`^-^\`
      \`^-^\`Contact me on private to suggest new functions!\`^-^\`      `)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);

@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const preffix = "t"
 
 client.on('ready', () => {
-console.log(`Gogged in as ${client.user.tag}!`);
+console.log(`Logged in as ${client.user.tag}!`);
 
 client.user.setActivity(`Lmao no strem`, {
 type: "STREAMING",

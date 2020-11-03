@@ -21,7 +21,7 @@ client.on("message", async msg => {
   command = command.slice(preffix.length);
 
   if (command === "help") {
-  	const helpembed = new client.MessageEmbed()
+  	const helpembed = new Discord.MessageEmbed()
   	.setColor("#7289DA")
   	.setAuthor(client.user.tag, client.user.displayAvatarURL())
   	.setDescription(

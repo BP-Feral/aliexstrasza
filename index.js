@@ -1,19 +1,20 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const bot = new Client;
 
 const preffix = "t"
 
 client.on('ready', () => {
 console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setActivity(`Lmao no strem`, {
+client.user.setActivity(`Lmao no stream`, {
 type: "STREAMING",
 url: "https://www.twitch.tv/aliexstrasza"})
   .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
   .catch(console.error);
 });
 
-client.on("message", async msg => {
+bot.on("message", async msg => {
   if (!msg.content.startsWith(preffix)) return;
 
   let command = msg.content.toLowerCase().split(" ")[0];

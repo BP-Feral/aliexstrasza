@@ -34,7 +34,8 @@ client.on("message", async msg => {
   }
   if (msg.author.client)
   {
-  	if (command ==="summoner" && command.user.id != "268746806521888768") {
+    if (msg.author.id == "268746806521888768")
+  	if (command ==="summoner") {
   		msg.channel.send("LMAO");
   	}
   }

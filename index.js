@@ -54,6 +54,15 @@ client.on("message", async msg => {
               console.log(`opgg requested, but wasn't the owner! -noreply-`);
              return
   }
+  
+  if ( command === "fb" && msg.author.id === "268746806521888768") {
+    msg.channel.send("https://www.facebook.com/mihai.pricob");
+     console.log(`fb requested by AliexStrasza! -got reply-`);
+  } else if ( command == "fb" && msg.author.id != "268746806521888768" )
+             {
+              console.log(`fb requested, but wasn't the owner! -noreply-`);
+             return
+  }
   //========================EXCLUSIVE COMMAND============================
   
   //=========================ONLY WRITE ABOVE============================

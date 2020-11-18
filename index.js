@@ -63,6 +63,14 @@ client.on("message", async msg => {
               console.log(`fb requested, but wasn't the owner! -noreply-`);
              return
   }
+  if ( command === "lmao" && msg.author.id === "268746806521888768") {
+    msg.channel.send("", {file: ["vildred.jpeg"] } );
+     console.log(`photo requested by AliexStrasza! -got reply-`);
+  } else if ( command == "lmao" && msg.author.id != "268746806521888768" )
+             {
+              console.log(`vildred requested, but wasn't the owner! -noreply-`);
+             return
+  }
   //========================EXCLUSIVE COMMAND============================
   
   //=========================ONLY WRITE ABOVE============================

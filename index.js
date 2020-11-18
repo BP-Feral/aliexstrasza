@@ -64,7 +64,7 @@ client.on("message", async msg => {
              return
   }
   if ( command === "lmao" && msg.author.id === "268746806521888768") {
-    msg.channel.send("", {file: ["vildred.jpeg"] } );
+    msg.channel.send("", {files: ["vildred.jpeg"] } );
      console.log(`photo requested by AliexStrasza! -got reply-`);
   } else if ( command == "lmao" && msg.author.id != "268746806521888768" )
              {

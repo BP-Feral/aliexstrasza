@@ -6,13 +6,13 @@ const preffix = "aliex"
 client.on('ready', () => 
   console.log(`Logged in as ${client.user.tag}!`));
 
-//client.on('ready', () =>{
-//client.user.setActivity(`type [aliexhelp] lmaoo`, {
-  //type: "STREAMING",
-  //url: "https://www.twitch.tv/aliexstrasza"})
-  //.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-  //.catch(console.error);
-//});
+client.on('ready', () =>{
+client.user.setActivity(`type [aliexhelp] lmaoo`, {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/aliexstrasza"})
+.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+.catch(console.error);
+});
 
 client.on("message", async msg => {
   if (!msg.content.startsWith(preffix)) return;

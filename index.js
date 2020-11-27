@@ -8,10 +8,10 @@ client.on('ready', () =>
 
 client.on('ready', () =>{
 client.user.setActivity(`type [aliexhelp] lmaoo`, {
-  type: "STREAMING",
-  url: "https://www.twitch.tv/aliexstrasza"})
-.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-.catch(console.error);
+  type: "AVAILABLE",
+  //url: "https://www.twitch.tv/aliexstrasza"})
+//.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+//.catch(console.error);
 });
 
 client.on("message", async msg => {
@@ -30,9 +30,9 @@ client.on("message", async msg => {
   	 __**Help Center**__
   	 \`^-^\`This section is not finished yet!\`^-^\`
      You can acces this menu by typing \`**aliexhelp**\`.
-     \`**aliexsum**\` and \`**aliexopgg**\` are my commands.
-     (these commands can **only** be run by AliexStrasza#5268)
-     Contact me on private to suggest new functions!
+     My commands are hidden because all of them respond only to me,
+     expect the one you just type.
+     Contact me on private to suggest some functions!
      I can even add user-id exclusive commands ;}`)
   		.setFooter("©️ 2020 AliexStrasza Development");
   	  msg.channel.send(helpembed);

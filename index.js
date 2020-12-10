@@ -7,11 +7,11 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity(`type [aliexhelp] lmaoo`, {
-  type: "AVAILABLE",
-  //url: "https://www.twitch.tv/aliexstrasza"})
-//.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
-//.catch(console.error);
+client.user.setActivity(`Join My Server! Press 'Watch'`, {
+  type: "STREAMING",
+  url: "https://discord.gg/WeutZCv"})
+.then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
+.catch(console.error);
 });
 
 client.on("message", async msg => {

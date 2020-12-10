@@ -9,7 +9,7 @@ client.on('ready', () =>
 client.on('ready', () =>{
 client.user.setActivity(`Join My Server! Press 'Watch'`, {
   type: "STREAMING",
-  url: "https://discord.gg/WeutZCv"})
+  url: "twitch.tv/AliexStrasza"})
 .then(presence => console.log(`Your Status has been set to  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);
 });

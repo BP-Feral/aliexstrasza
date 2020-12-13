@@ -43,24 +43,6 @@ client.on("message", async msg => {
              {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
              return
-  }
-   if ( command === "txt" && msg.author.id === "268746806521888768") {
-     console.log(`txt requested`);
-     const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#9e34eb')
-	.setTitle('__Xp Information__')
-	.setDescription('**XP** is gained every time you talk within a **2 minute** time interval.You will not get more **XP** just because the message is bigger. **5XP** is gained every minute in a voice channel, and everytime you send a message. To check your **XP level** go to #『command-bot』 and type **ar!member stats**')
-	.addBlankField()
-     	.setTitle('_Below are the various roles you can obtain with **XP**_')
-     	.setDescription('TEST','TEST','TEST')
-     	.addField('That pretty much sums up the basics, hope you enjoy your stay.')
-     	.addField('*If you have any other questions please send a direct message to @S1ckBoY#8245 and our moderators will assist you!')
-	.setTimestamp()
-     	.setImage('https://images-ext-1.discordapp.net/external/9txhILoQRmfUxBF2XpSYzfnQ75oi8Myu4fAXRYnA5As/https/media.discordapp.net/attachments/618052760084152320/698167118897872936/NarutoDiscord_PinkPurple_2020.gif')
-	//.setFooter('');
-	msg.channel.send(exampleEmbed);
-	   return
-  }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
      console.log(`opgg requested by AliexStrasza! -got reply-`);
@@ -69,7 +51,6 @@ client.on("message", async msg => {
               console.log(`opgg requested, but wasn't the owner! -noreply-`);
              return
   }
-  
   if ( command === "fb" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://www.facebook.com/mihai.pricob");
      console.log(`fb requested by AliexStrasza! -got reply-`);

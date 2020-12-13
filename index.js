@@ -47,18 +47,17 @@ client.on("message", async msg => {
    if ( command === "txt" && msg.author.id === "268746806521888768") {
      console.log(`txt requested`);
      const exampleEmbed = new Discord.RichEmbed()
-	.setColor('#0099ff')
-	.setTitle('Some title')
-	.setURL('https://discord.js.org/')
-	.setAuthor('S1ckBoY', 'https://i.imgur.com/wSTFkRM.png', 'https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128')
-	.setDescription('ce nub esti')
-	.setThumbnail('https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128')
-	.addField('ia de aici niste memeuri', 'sa te simti mai bine')
+	.setColor('#9e34eb')
+	.setTitle('__Xp Information__')
+	.setDescription('*XP* is gained every time you talk within a *2 minute* time interval. *XP* is not determined by the size of the message. You will not get more *XP* just because the message is bigger. *XP* is randomized from *30-50*. To check your *XP level* go to #『command-bot』 and type *ar!member stats*')
+	.addField('_Below are the various roles you can obtain with XP_')
 	.addBlankField()
-	.addField('doge', 'POG', true)
-	.setImage('https://crhscountyline.com/wp-content/uploads/2020/03/Capture.png')
+	.addField('[01] @Genin', '[02] @Chunin', '[03] @Jonin', '[04] @Anbu', '[05] @Rogue', '[06] @Jhinchuriki', '[07] @Edo Tensei', '[08] @Kage', '[09] @Sannin', '[10] @Sage', '[11] @God of Shinobi', '[12] @Jūbi', '[13] @8 Gates', '[14] @♔ Ōtsutsuki ♔')
+	.addBlankField()
+     	.addField('That pretty much sums up the basics, hope you enjoy your stay.')
+        .addField('*If you have any other queries please send a direct message to @S1ckBoY#8245 and our moderators will assist you!')
 	.setTimestamp()
-	.setFooter('acum am plecat am treaba xd', 'https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128');
+	//.setFooter('');
 	msg.channel.send(exampleEmbed);
 	   return
   }

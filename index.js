@@ -50,17 +50,15 @@ client.on("message", async msg => {
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
-	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
-	.addField('Regular field title', 'Some value here')
+	.setAuthor('S1ckBoY', 'https://i.imgur.com/wSTFkRM.png', 'https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128')
+	.setDescription('ce nub esti')
+	.setThumbnail('https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128')
+	.addField('ia de aici niste memeuri', 'sa te simti mai bine')
 	.addBlankField()
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.addField('doge', 'POG', true)
+	.setImage('https://crhscountyline.com/wp-content/uploads/2020/03/Capture.png')
 	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+	.setFooter('acum am plecat am treaba xd', 'https://cdn.discordapp.com/icons/781416926218944513/eb93ddfc962ae5b23cffbfe27b1cac3d.png?size=128');
 	msg.channel.send(exampleEmbed);
 	   return
   }

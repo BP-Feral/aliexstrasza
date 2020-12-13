@@ -54,7 +54,8 @@ client.on("message", async msg => {
 	.addBlankField()
 	.addField('[01] @Genin', '[02] @Chunin', '[03] @Jonin', '[04] @Anbu', '[05] @Rogue', '[06] @Jhinchuriki', '[07] @Edo Tensei', '[08] @Kage', '[09] @Sannin', '[10] @Sage', '[11] @God of Shinobi', '[12] @Jūbi', '[13] @8 Gates', '[14] @♔ Ōtsutsuki ♔', false)
 	.addBlankField()
-     	.addField('That pretty much sums up the basics, hope you enjoy your stay.','*If you have any other queries please send a direct message to @S1ckBoY#8245 and our moderators will assist you!' false)
+     	.addField('That pretty much sums up the basics, hope you enjoy your stay.',false)
+     	.addField('*If you have any other queries please send a direct message to @S1ckBoY#8245 and our moderators will assist you!', false)
 	.setTimestamp()
 	//.setFooter('');
 	msg.channel.send(exampleEmbed);

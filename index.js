@@ -70,6 +70,7 @@ client.on("message", async msg => {
      	.addField('That pretty much sums up the basics, hope you enjoy your stay.')
      	.addField('*If you have any other questions please send a direct message to @S1ckBoY#8245 and our moderators will assist you!')
 	.setTimestamp()
+     	.setImage('https://images-ext-1.discordapp.net/external/9txhILoQRmfUxBF2XpSYzfnQ75oi8Myu4fAXRYnA5As/https/media.discordapp.net/attachments/618052760084152320/698167118897872936/NarutoDiscord_PinkPurple_2020.gif')
 	//.setFooter('');
 	msg.channel.send(exampleEmbed);
 	   return

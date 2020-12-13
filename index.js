@@ -50,7 +50,7 @@ client.on("message", async msg => {
 	.setColor('#9e34eb')
 	.setTitle('__Xp Information__')
 	.setDescription('**XP** is gained every time you talk within a **2 minute** time interval.You will not get more **XP** just because the message is bigger. **5XP** is gained every minute in a voice channel, and everytime you send a message. To check your **XP level** go to #『command-bot』 and type **ar!member stats**')
-	.addField('_Below are the various roles you can obtain with **XP**_','[01] @Genin','[02] @Chunin')
+	.addField('_Below are the various roles you can obtain with **XP**_','[01] @Genin','[02] @Chunin',false)
 	.addBlankField()
 	.addField('[01] @Genin')
      	.addField('[02] @Chunin')

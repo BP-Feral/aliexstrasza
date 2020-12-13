@@ -61,9 +61,8 @@ client.on("message", async msg => {
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-
-channel.send(exampleEmbed);
-             return
+	msg.channel.send(exampleEmbed);
+	   return
   }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");

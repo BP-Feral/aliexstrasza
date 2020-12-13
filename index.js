@@ -52,10 +52,10 @@ client.on("message", async msg => {
 	.setDescription('*XP* is gained every time you talk within a *2 minute* time interval. *XP* is not determined by the size of the message. You will not get more *XP* just because the message is bigger. *XP* is randomized from *30-50*. To check your *XP level* go to #『command-bot』 and type *ar!member stats*')
 	.addField('_Below are the various roles you can obtain with XP_')
 	.addBlankField()
-	.addField('[01] @Genin', '[02] @Chunin', '[03] @Jonin', '[04] @Anbu', '[05] @Rogue', '[06] @Jhinchuriki', '[07] @Edo Tensei', '[08] @Kage', '[09] @Sannin', '[10] @Sage', '[11] @God of Shinobi', '[12] @Jūbi', '[13] @8 Gates', '[14] @♔ Ōtsutsuki ♔')
+	.addField('[01] @Genin', '[02] @Chunin', '[03] @Jonin', '[04] @Anbu', '[05] @Rogue', '[06] @Jhinchuriki', '[07] @Edo Tensei', '[08] @Kage', '[09] @Sannin', '[10] @Sage', '[11] @God of Shinobi', '[12] @Jūbi', '[13] @8 Gates', '[14] @♔ Ōtsutsuki ♔', false)
 	.addBlankField()
-     	.addField('That pretty much sums up the basics, hope you enjoy your stay.')
-        .addField('*If you have any other queries please send a direct message to @S1ckBoY#8245 and our moderators will assist you!')
+     	.addField('That pretty much sums up the basics, hope you enjoy your stay.', false)
+        .addField('*If you have any other queries please send a direct message to @S1ckBoY#8245 and our moderators will assist you!', false)
 	.setTimestamp()
 	//.setFooter('');
 	msg.channel.send(exampleEmbed);

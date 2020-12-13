@@ -46,7 +46,6 @@ client.on("message", async msg => {
   }
    if ( command === "txt" && msg.author.id === "268746806521888768") {
      console.log(`txt requested`);
-  }
              return
   }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {

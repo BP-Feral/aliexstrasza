@@ -43,6 +43,7 @@ client.on("message", async msg => {
              {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
              return
+             }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
      console.log(`opgg requested by AliexStrasza! -got reply-`);

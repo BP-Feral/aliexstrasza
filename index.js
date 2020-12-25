@@ -7,8 +7,9 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity('Join My Server!', {type: "STREAMING", url:"https://www.twitch.tv/AliexStrasza"})
-.then(presence => console.log(`Your Status has been set to streaming  ${presence.game ? presence.game.none : 'none'}`))
+client.user.setActivity('Yo!', {type: "STREAMING",
+                                            url: "https://www.google.com"})
+.then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);
 });
 

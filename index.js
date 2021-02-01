@@ -8,7 +8,7 @@ client.on('ready', () =>
 
 client.on('ready', () =>{
 client.user.setActivity('Risk of Rain 2', {type: "STREAMING",
-                                            url: "https://www.twitch.tv/Aliexstrasza"})
+                                            url: "https://www.google.com"})
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);
 });

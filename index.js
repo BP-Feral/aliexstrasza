@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity('Risk of Rain 2', {type: "STREAMING",
+client.user.setActivity('Cyberpunk 7702', {type: "STREAMING",
                                             url: "https://www.twitch.tv/aliexstrasza"})
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);

@@ -7,8 +7,9 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity('People and their air...', {type: "STREAMING",
-                                            url: "https://www.twitch.tv/aliexstrasza"})
+client.user.setActivity('People and their air...', {type: "LISTENING",
+                                         //   url: "https://www.twitch.tv/aliexstrasza"
+                                                   })
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);
 });

@@ -23,11 +23,11 @@ client.on("message", async msg => {
     console.log(`Greeting requested - no reply!`);
     return;
   }
-    if (msg.content.author === "424894078631542795") {
+    if (msg.content.author.id === "424894078631542795") {
     msg.channel.send(` Da <@424894078631542795> cub mistic baa`);
     console.log(`cub mistic reply sent`);
     return;
-  } else if (msg.content.author != "424894078631542795") {
+  } else if (msg.content.author.id != "424894078631542795") {
     console.log(`author id didn't match`);
     return;
   }

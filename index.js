@@ -30,8 +30,10 @@ client.on("message", async msg => {
   	 __**Help Center**__
   	 \`^-^\`This section is not finished yet!\`^-^\`
      You can acces this menu by typing \`**aliexhelp**\`.
-     My commands are hidden because all of them respond only to me,
-     expect the one you just type.
+     The following commands can only be run by the owner of the program,
+    \`aliexsum\` - request summoner name from League of Legends.
+    \`opgg\` - request link to opgg profile.
+    \`fb\` - request owner's Facebook contact link.
      Contact me on private to suggest some functions!
      I can even add user-id exclusive commands ;}`)
   		.setFooter("©️ 2020 AliexStrasza Development");

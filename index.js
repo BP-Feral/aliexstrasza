@@ -24,7 +24,7 @@ client.on("message", async msg => {
     return;
   }
     if (msg.content.author === "424894078631542795") {
-    msg.channel.send(` Da <@${msg.author.id}> cub mistic baa`);
+    msg.channel.send(` Da <@424894078631542795> cub mistic baa`);
     console.log(`cub mistic reply sent`);
     return;
   } else if (msg.content.author != "424894078631542795") {

@@ -19,7 +19,10 @@ client.on("message", async msg => {
     msg.channel.send(` Buna Dimineata!`);
     console.log(`Greeting requested - got reply!`);
     return;
-  } else if (msg.content.toLowerCase() === "alo" && msg.author.id != "424894078631542795") return;
+  } else if (msg.content.toLowerCase() === "alo" && msg.author.id != "424894078631542795") {
+    console.log(`Greeting requested - no reply!`);
+    return;
+  }
   if (!msg.content.startsWith(preffix)) return;
   let command = msg.content.toLowerCase().split(" ")[0];
   command = command.slice(preffix.length);

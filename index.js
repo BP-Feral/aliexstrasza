@@ -17,9 +17,9 @@ client.user.setActivity('People and their air...', {type: "LISTENING",
 client.on("message", async msg => {
   if ( command === "alo" && msg.author.id === "424894078631542795") {
     msg.channel.send("Buna Dimineata!");
-    console.log(`Greeting requested by ${author} - got reply!`);
+    console.log(`Greeting requested by vadimquic - got reply!`);
   } else if ( command === "alo" && msg.author.id != "424894078631542795") {
-    console.log (`Greeting requested by ${author} - no reply!`);
+    console.log (`Greeting requested by vadim - no reply!`);
     return;
   }
   if (!msg.content.startsWith(preffix)) return;

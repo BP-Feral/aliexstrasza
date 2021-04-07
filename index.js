@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-client.user.setActivity('ᴅʀᴀᴋᴀɴɪᴀ ᴛʜɪɴɢꜱ', {type: "LISTENING",
+client.user.setActivity('𝖕𝖊𝖔𝖕𝖑𝖊 𝖆𝖓𝖉 𝖙𝖍𝖊𝖎𝖗 𝖆𝖎𝖗', {type: "LISTENING",
                                          //   url: "https://www.twitch.tv/naminikuu"
                                                    })
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))

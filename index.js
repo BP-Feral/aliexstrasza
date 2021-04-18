@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const preffix = "aliex"
+const preffix = "na "
 
 client.on('ready', () => 
   console.log(`Logged in as ${client.user.tag}!`));
@@ -51,7 +51,7 @@ client.on("message", async msg => {
     \`fb\` - request owner's Facebook contact link.
      Contact me on private to suggest some functions!
      I can even add user-id exclusive commands ;}`)
-  		.setFooter("©️ 2020 AliexStrasza Development");
+  		.setFooter("©️ 2020 <@268746806521888768> Development");
   	  msg.channel.send(helpembed);
   }
   //========================EXCLUSIVE COMMAND============================

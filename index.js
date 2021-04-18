@@ -51,13 +51,13 @@ client.on("message", async msg => {
     \`fb\` - request owner's Facebook contact link.
      Contact me on private to suggest some functions!
      I can even add user-id exclusive commands ;}`)
-  		.setFooter("©️ 2020 <@268746806521888768> Development");
+  		.setFooter("©️ 2020 𝗡𝗮𝗺𝗶 Development");
   	  msg.channel.send(helpembed);
   }
   //========================EXCLUSIVE COMMAND============================
   if ( command === "sum" && msg.author.id === "268746806521888768") {
-    msg.channel.send("My EUNE summoner name is \`Øphaquiłle\`");
-     console.log(`Summoner name requested by AliexStrasza! -got reply-`);
+    msg.channel.send("My EUNE summoner name is \`Gwen Βot\`");
+     console.log(`Summoner name requested by ${msg.author}! -got reply-`);
   } else if ( command == "sum" && msg.author.id != "268746806521888768" )
              {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
@@ -65,7 +65,7 @@ client.on("message", async msg => {
              }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
-     console.log(`opgg requested by AliexStrasza! -got reply-`);
+     console.log(`opgg requested by ${msg.author}! -got reply-`);
   } else if ( command == "opgg" && msg.author.id != "268746806521888768" )
              {
               console.log(`opgg requested, but wasn't the owner! -noreply-`);
@@ -73,7 +73,7 @@ client.on("message", async msg => {
   }
   if ( command === "fb" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://www.facebook.com/mihai.pricob");
-     console.log(`fb requested by AliexStrasza! -got reply-`);
+     console.log(`fb requested by ${msg.author} -got reply-`);
   } else if ( command == "fb" && msg.author.id != "268746806521888768" )
              {
               console.log(`fb requested, but wasn't the owner! -noreply-`);
@@ -81,7 +81,7 @@ client.on("message", async msg => {
   }
   if ( command === "lmao" && msg.author.id === "268746806521888768") {
     msg.channel.send("", {files: ["vildred.jpeg"] } );
-     console.log(`photo requested by AliexStrasza! -got reply-`);
+     console.log(`photo requested by ${msg.author}! -got reply-`);
   } else if ( command == "lmao" && msg.author.id != "268746806521888768" )
              {
               console.log(`vildred requested, but wasn't the owner! -noreply-`);

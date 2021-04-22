@@ -88,7 +88,7 @@ client.on("message", async msg => {
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-channel.send(exampleEmbed);
+msg.channel.send(exampleEmbed);
    }
   
   if ( command === "fb" && msg.author.id === "268746806521888768") {

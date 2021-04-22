@@ -72,32 +72,25 @@ client.on("message", async msg => {
              return
   }
    if ( command === "embed1" && msg.author.id === "268746806521888768") {
-    const image2embed = new Discord.MessageEmbed()
-	.setColor("#9a45c4")
-	.setTitle('__XP Information__')
-	.setDescription(
-	`
-	**XP** is given if you are active on our server.
-	**AFK** channel doesn't count!
-	_Below are the various roles you can obtain with XP_
-	**[01] level 5 ** <@&787732542982717510>
-	**[02] level 10** <@&787732766178410526>
-	**[03] level 15** <@&787732962330148904>
-	**[04] level 20** <@&787733025995489301>
-	**[05] level 25** <@&787733572923686922>
-	**[06] level 30** <@&787733639240351755>
-	**[07] level 35** <@&787733709033701417>
-	**[08] level 40** <@&787733798615253004>
-	**[09] level 45** <@&787733980941647912>
-	**[10] level 50** <@&787734149573509160>
-	
-	That pretty much sums up the basics, hope you enjoy your stay!
-	If you have any other queries please send a direct message to 
-	<@486607756434997248> and our Support Team will assist you!
-	Check out <#786475993211863081> to chat with others!
-`)
-	.setImage('https://images-ext-1.discordapp.net/external/9txhILoQRmfUxBF2XpSYzfnQ75oi8Myu4fAXRYnA5As/https/media.discordapp.net/attachments/618052760084152320/698167118897872936/NarutoDiscord_PinkPurple_2020.gif')
-  	msg.channel.send(image2embed);
+    const exampleEmbed = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('Some title')
+	.setURL('https://discord.js.org/')
+	.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+	.setDescription('Some description here')
+	.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+	.addField('Inline field title', 'Some value here', true)
+	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.setTimestamp()
+	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+
+channel.send(exampleEmbed);
    }
   
   if ( command === "fb" && msg.author.id === "268746806521888768") {

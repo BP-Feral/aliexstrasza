@@ -74,17 +74,35 @@ client.on("message", async msg => {
    if ( command === "embed1" && msg.author.id === "268746806521888768") {
     const exampleEmbed = new Discord.RichEmbed()
 	.setColor('#45a34f')
-	.setTitle('@everyone')
+	.setTitle('<@723128207293022260>')
 	.setDescription('We are oppening a modded factorio server!')
 	.setThumbnail('https://factorio.com/static/img/factorio-wheel.png')
 	.addField('Factorio Version', '1.1.32 (build 58364, win64)')
 	.addBlankField()
-	.addField('Inline field title', 'Some value here')
-	.addField('Inline field title', 'Some value here')
-	.addField('Inline field title', 'Some value here', true)
-	.setImage('https://i.imgur.com/wSTFkRM.png')
+	.addField('How to join us?', 'there are two ways to join our server!')
+	.addField('Steam Game',`
+If you own Factorio on Steam, then you just have
+to join our server. The mods will be installed automatically.` )
+    
+	.addField('Non-Steam Game',`
+If you don't have Factorio on Steam, our server accepts connections trough
+Radmin VPN. First of all you have to make sure you run the same game version
+(check above) and install Radmin VPN.
+> https://mega.nz/file/osIBXILD#BvLdEDMrRkA5wo95uFX0II5Sk_gRjxJ9BGRwlPUXeXo
+> https://www.radmin-vpn.com/download/Radmin_VPN_1.1.4288.10.exe
+
+Once Radmin is installed, connect to our network using:
+> Network name: **PolarOrbit** 
+> Network password: **factorio4life**
+
+Now you can open Factorio, go to multiplayer, choose **Connect to address**
+and use the following ip address: 26.31.113.148
+
+The mods will be downloaded automatically.
+`)
+    	.addField('For a complete mod list check this link:', 'https://aliexstrasza.herokuapp.com/')
 	.setTimestamp()
-	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
+	.setFooter('Play nice everybody!');
 
 msg.channel.send(exampleEmbed);
    }

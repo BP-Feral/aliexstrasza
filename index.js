@@ -7,7 +7,7 @@ client.on('ready', () =>
   console.log(`Logged in as ${client.user.tag}!`));
 
 client.on('ready', () =>{
-//client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞𝙧 𝙖𝙞𝙧', {type: "STREAMING",
+client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞𝙧 𝙖𝙞𝙧', {type: "AVAILABLE", //STREAMING
                                        // url: "https://www.twitch.tv/epicseven"
 })
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))

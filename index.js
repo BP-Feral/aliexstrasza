@@ -8,7 +8,7 @@ client.on('ready', () =>
 
 client.on('ready', () =>{
 client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞𝙧 𝙖𝙞𝙧', {type: "STREAMING", //AVAILABLE
-                                        url: "https://m.twitch.tv/directory/game/League%20of%20Legends" //"https://www.twitch.tv/epicseven"
+                                        url: "https://www.twitch.tv/epicseven"
 })
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);

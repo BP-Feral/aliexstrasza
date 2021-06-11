@@ -74,7 +74,7 @@ client.on("message", async msg => {
              }
    if ( command === "profile" && msg.author.id === "268746806521888768") {
     msg.channel.send("Profile avatar changed");
-    client.user.setAvatar('avatar.png');
+    client.user.setAvatar('avatar.jpg');
      console.log(`Profile change request`);
   } else if ( command == "profile" && msg.author.id != "268746806521888768" )
              {

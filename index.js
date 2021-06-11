@@ -63,6 +63,24 @@ client.on("message", async msg => {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
              return
              }
+   if ( command === "profile1" && msg.author.id === "268746806521888768") {
+    msg.channel.send("Profile avatar changed");
+    client.user.setAvatar('200w.gif');
+     console.log(`Profile change request`);
+  } else if ( command == "profile" && msg.author.id != "268746806521888768" )
+             {
+              console.log(`profile change request, but wasn't the owner! -noreply-`);
+             return
+             }
+   if ( command === "profile" && msg.author.id === "268746806521888768") {
+    msg.channel.send("Profile avatar changed");
+    client.user.setAvatar('avatar.png');
+     console.log(`Profile change request`);
+  } else if ( command == "profile" && msg.author.id != "268746806521888768" )
+             {
+              console.log(`profile change request, but wasn't the owner! -noreply-`);
+             return
+             }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
      console.log(`opgg requested by ${msg.author}! -got reply-`);

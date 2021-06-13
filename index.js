@@ -128,4 +128,4 @@ msg.channel.send(exampleEmbed);
   //=========================ONLY WRITE ABOVE============================
 });
 //client.login("MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc");
-client.run('mfa.MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc', bot=False)
+client.run('mfa.MjY4NzQ2ODA2NTIxODg4NzY4.X6Byew.QLSvq8jcXNFK5dyJUNcy2kQoQgc', bot=false)

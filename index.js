@@ -8,7 +8,7 @@ client.on('ready', () =>
 
 client.on('ready', () =>{
 client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞𝙧 𝙖𝙞𝙧', {type: "STREAMING", //AVAILABLE
-                                        url: "https://www.twitch.tv/epicseven"
+                                        url: "https://m.twitch.tv/directory/game/League%20of%20Legends" //"https://www.twitch.tv/epicseven"
 })
 .then(presence => console.log(`Your Status has been set to streaming pog  ${presence.game ? presence.game.none : 'none'}`))
 .catch(console.error);
@@ -61,24 +61,6 @@ client.on("message", async msg => {
   } else if ( command == "sum" && msg.author.id != "268746806521888768" )
              {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
-             return
-             }
-   if ( command === "profile1" && msg.author.id === "268746806521888768") {
-    msg.channel.send("Profile avatar changed");
-    client.user.setAvatar('200w.gif');
-     console.log(`Profile change request`);
-  } else if ( command == "profile" && msg.author.id != "268746806521888768" )
-             {
-              console.log(`profile change request, but wasn't the owner! -noreply-`);
-             return
-             }
-   if ( command === "profile" && msg.author.id === "268746806521888768") {
-    msg.channel.send("Profile avatar changed");
-    client.user.setAvatar('avatar.jpg');
-     console.log(`Profile change request`);
-  } else if ( command == "profile" && msg.author.id != "268746806521888768" )
-             {
-              console.log(`profile change request, but wasn't the owner! -noreply-`);
              return
              }
     if ( command === "opgg" && msg.author.id === "268746806521888768") {

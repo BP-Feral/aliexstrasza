@@ -15,7 +15,7 @@ client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞�
 });
   
 client.on("message", async msg => {
-	if(message.guild) {
+	if(message.channel != null) {
 		if(message.channel.id === "833990993845551144"){
 			message.react(":arrow-up:");
 			message.react(":arrow-down:")

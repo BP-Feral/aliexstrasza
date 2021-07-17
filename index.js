@@ -15,7 +15,7 @@ client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞�
 });
   
 client.on("message", async msg => {
-  if(message.channel.id === "833990993845551144" && message.guild.id === "833372948680409128"){
+  if(message.channel.id === "833990993845551144"){
     	message.react(":arrow-up:");
 	message.react(":arrow-down:")
   } else if (msg.content.toLowerCase() === "alo" && msg.author.id === "424894078631542795") {

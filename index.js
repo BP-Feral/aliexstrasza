@@ -15,11 +15,11 @@ client.user.setActivity('𝙥𝙚𝙤𝙥𝙡𝙚 𝙖𝙣𝙙 𝙩𝙝𝙚𝙞�
 });
   
 client.on("message", async msg => {
-	if(message.channel != null) {
+	if(message.channel.id != null) {
 		if(message.channel.id === "833990993845551144"){
 			message.react(":arrow-up:");
 			message.react(":arrow-down:")
-		}
+		} else return;
 	} else if (msg.content.toLowerCase() === "alo" && msg.author.id === "424894078631542795") {
     		msg.channel.send(` Buna Dimineata!`);
     		console.log(`Greeting requested - got reply!`);
@@ -68,6 +68,7 @@ client.on("message", async msg => {
               console.log(`Summoner name requested, but wasn't the owner! -noreply-`);
              return
              }
+
     if ( command === "opgg" && msg.author.id === "268746806521888768") {
     msg.channel.send("https://eune.op.gg/summoner/userName=%C3%98phaqui%C5%82le");
      console.log(`opgg requested by ${msg.author}! -got reply-`);
